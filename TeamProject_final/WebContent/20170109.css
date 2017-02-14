@@ -1,0 +1,376 @@
+@CHARSET "EUC-KR";
+body {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-family: "Lato", sans-serif;
+}
+.ncolor a:hover { /*마우스오버했을때*/ 
+    background-color: #474956;
+    color:#b9bcc9;
+}
+/* write jsp text area */
+.write_ta{
+	resize:none;
+}
+/* 메뉴 css */
+.sidenav { /*메뉴전체*/ 
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#343640;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top : 70px;
+    
+}
+
+.sidenav a{ /*메뉴틀*/ 
+    border-bottom: 1px solid #24262f;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 17px;
+    color: #61646f;
+    display: block;
+    padding-left: 60px;
+}
+
+.sidenav input{
+	margin-top:20px;
+	margin-left: 60px;
+	font-size:17px;
+}
+
+.ncolor a:hover { /*마우스오버했을때*/ 
+    background-color: #474956;
+    color:#b9bcc9;
+}
+
+
+.sidenav .closebtn { /* 메뉴x표시 */
+    
+    border-bottom:none ;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 20px;
+    margin-left:100px;
+    
+}
+
+.sidenav .openNav { /* 메뉴open표시 */
+    
+    border-bottom:none ;
+    position: fixed;
+    left: 0px;
+    font-size: 20px;
+    height:100%;
+    width:0;
+    z-index: 1;
+    top: 0;
+    background-color:#343640;
+    overflow-x: hidden;
+    padding: 25px 25px 50px 10px;
+}
+
+
+#main {
+    transition: margin-left .5s;
+    margin-left:250px;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* img css */
+.col-4 {
+	margin: 1%;
+	float: left;
+}
+
+/* 로그인 CSS */
+
+.login {
+	position: absolute;
+	width: 400px;
+	height: 350px;
+	margin-top: 50px;
+	margin-left:600px;
+	padding: 5px;
+	display: none;
+	background: #FFF;
+	z-index: 2;
+}
+  
+.login_tb {
+	width: 100%;
+	height: 100%;
+}
+
+.login_tb input {
+	width: 100%;
+	height: 50px;
+	font-size: 13pt;
+	padding: 0;
+	margin: 0;
+}
+
+.login_title {
+	width: 100%;
+	height: 50px;
+	font-size: 18pt;
+	background: #253C51;
+	line-height: 15px;
+	color: #FFF;
+	margin: 0;
+}
+
+.login_close {
+	position: absolute;
+	top: 10px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.login_close:hover, .login_close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+/* 회원가입, 회원정보수정 CSS */
+.join, .informModify{
+	position: absolute;
+	width: 400px;
+	height: 460px;
+	padding: 5px;
+	margin-left:600px;
+	background: #fff;
+	display: none;
+	z-index: 3;
+}
+
+.join_tb {
+	width: 100%;
+	height: 100%;
+}
+
+.join_tb input[type="text"], .join_tb input[type="password"] {
+	width: 100%;
+	height: 35px;
+	font-size: 11pt;
+}
+
+.join_btn{
+	width:100%;
+}
+
+#join_btn, #join_reset{
+	height:35px;
+	font-size:11pt;
+}
+
+.join_tb input[type="submit"], .join_tb input[type="button"]{
+	height:35px;
+	font-size:11pt;
+}
+
+.join_title {
+	width: 100%;
+	height: 50px;
+	font-size: 18pt;
+	background: #253C51;
+	line-height: 15px;
+	color: #FFF;
+}
+
+.join_close, .modify_close{
+	position: absolute;
+	top: 10px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+}
+
+.join_close:hover, .join_close:focus, .modify_close:hover, .modify_close:focus{
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#email, select {
+	width: 44%;
+	height: 35px;
+	padding: 0;
+	margin: 0;
+}
+
+#phone1, #phone2, #phone3 {
+	width: 27%;
+}
+
+.join_text {
+	width: 30%;
+	height: 35px;
+}
+
+.join_btn input {
+	width: 100%;
+}
+
+.main {
+	padding-left: 90px;
+}
+/* 寃���李� CSS */
+.search {
+	padding-top: 15px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+	transition: 0.5s;
+	z-index:2;
+}
+/* �대�몄� �대┃ �� 寃���李� CSS */
+.search_clicked {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 60px;
+}
+/* �대�몄��� ���� ���� 200px 怨��� */
+.hover {
+	width: 200px;
+	height: 200px;
+}
+
+.hover:hover { /* ���� 硫��댁�� a ��洹몄�� 留��곗�� �ㅻ� �ㅽ���� �ㅼ�� */
+	color: red; /* 湲��⑥�살���� ��源� �쇰�⑤����濡� �대�� */
+	opacity: 0.7; /*  �대�몄�����怨� �щ���*/
+}
+
+.div:hover {
+	opacity: 0.85;
+	cursor: pointer;
+}
+
+.div {
+	width: 200px;
+	height: 200px;
+	background-color: black; /* �대�몄��� �ш린 ��媛��� div 諛곌꼍��(寃�����) �대�몄�
+                     留��곗�ㅼ�ㅻ��щ━硫� �щ��댁�硫댁�� 寃������곗�*/
+}
+
+.target:hover {
+	opacity: 0.85;
+	cursor: pointer;
+}
+
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+.login_modal{
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+}
+
+.modalBlock {
+	display: block;
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	table-align: center;
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.8); /* Black w/ opacity */
+}
+
+#img1 {
+   margin: 0px;
+   display: block;
+   width:100%;
+}
+
+.popup {
+   margin: 0px;
+}
+/* The Close Button */
+.close {
+   position: absolute;
+   top: 60px;
+   right: 35px;
+   color: #f1f1f1;
+   font-size: 40px;
+   font-weight: bold;
+   transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+   color: #bbb;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+#total_div {
+   background-color: white;
+   padding: 0 0 0 0;
+   margin:auto auto auto auto;
+}
+
+.board_tb{
+   padding-left:10px;
+   padding-top:7px;
+}
+
+#area_setting {
+	margin-top: 0px;
+	margin-left: 0px;
+	margin-bottom: 80px;
+	width: 100%;
+	padding-top:70px;
+	padding-left: 10px;
+}
+
+#connect{
+	font-size:17px;
+	margin-left:35px;
+	margin-top:90%;
+	background:#707279;
+}
+#connect input{
+	margin:0;
+}
+#connect #user{
+	color:#F6b352;
+}
